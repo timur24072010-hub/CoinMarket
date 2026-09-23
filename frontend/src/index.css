@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* =========================
+   ANT DESIGN — DARK THEME
+   ========================= */
+
+.dark .ant-menu {
+    background: #111827 !important;
+    color: #d1d5db !important;
+}
+
+.dark .ant-menu-item {
+    color: #d1d5db !important;
+}
+
+.dark .ant-menu-item:hover {
+    background: #1f2937 !important;
+    color: #ffffff !important;
+}
+
+.dark .ant-menu-item-selected {
+    background: #1e3a5f !important;
+    color: #60a5fa !important;
+}
+
+.dark .ant-menu-item-group-title {
+    color: #9ca3af !important;
+}
+
+.dark .ant-menu-inline {
+    border-right: 1px solid #1f2937 !important;
+}
+
+
+/* =========================
+   ANT CARD
+   ========================= */
+
+.dark .ant-card {
+    background: #111827 !important;
+    border-color: #1f2937 !important;
+    color: #ffffff !important;
+}
+
+.dark .ant-card-head {
+    background: #111827 !important;
+    border-bottom-color: #1f2937 !important;
+    color: #ffffff !important;
+}
+
+.dark .ant-card-body {
+    background: #111827 !important;
+    color: #ffffff !important;
+}
+
+
+/* Текст внутри Card */
+
+.dark .ant-card .text-gray-900 {
+    color: #ffffff !important;
+}
+
+.dark .ant-card .text-gray-700 {
+    color: #d1d5db !important;
+}
+
+.dark .ant-card .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+
+.dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
